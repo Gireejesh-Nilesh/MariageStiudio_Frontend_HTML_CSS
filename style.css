@@ -1,0 +1,136 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-family: sans-serif;
+  background-color: #181a1b;
+  color: #e8e6e3;
+}
+
+
+.main {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+}
+
+.view1 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+
+.header {
+  width: 100%;
+  border-bottom: 1px solid #444;
+}
+
+.header h1 {
+  text-align: center;
+  padding: 1rem;
+}
+
+
+.center {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 7 / 9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: #fff;
+  padding: 3em;
+  overflow: hidden;
+  z-index: 0;
+}
+
+.center::before {
+  content: "";
+  position: absolute;
+  inset: 0; 
+  background: url('./images/main.webp') no-repeat center center / cover;
+  opacity: 0.6; 
+  z-index: -1;
+}
+
+
+.center h1 {
+  font-size: 3rem;
+  line-height: 1.4;
+}
+
+.center p {
+  font-size: 1.2rem;
+  margin-top: 1rem;
+  text-align: center;
+  font-weight: 600;
+  line-height: 1.6;
+}
+
+.center button {
+  margin-top: 2rem;
+  padding: 0.8rem 2rem;
+  background-color: #059de8;
+  color: #e8e6e3;
+  border: none;
+  border-radius: 7px;
+  font-size: 1rem;
+  cursor: pointer;
+  font-weight: 700;
+  transition: background-color 0.3s ease;
+}
+
+.center button:hover {
+  background-color: #028bcc;
+}
+
+
+.view1 .bottom {
+  width: 100%;
+  background-color: #1f2123;
+  line-height: 2em;
+}
+
+.view1 .bottom h3 {
+  padding: 1em 3.2rem;
+  text-align: center;
+  font-weight: 600;
+}
+
+.view1 .bottom p {
+  padding: 1em 3.2rem;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.view2{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.view2 .d1{
+  width: 100%;
+  padding: 5em 4rem;
+  background-color: #222526;
+}
+
+.d1 h2{
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
