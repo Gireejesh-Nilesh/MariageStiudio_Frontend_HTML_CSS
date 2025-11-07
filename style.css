@@ -4,18 +4,17 @@
   box-sizing: border-box;
 }
 
-html, body {
-  height: 100%;
-  width: 100%;
+html,
+body {
+  height: 100vh;
+  width: 100vw;
   font-family: sans-serif;
   background-color: #181a1b;
   color: #e8e6e3;
 }
 
-
 .main {
   width: 100%;
-  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -28,18 +27,6 @@ html, body {
   display: flex;
   flex-direction: column;
 }
-
-
-.header {
-  width: 100%;
-  border-bottom: 1px solid #444;
-}
-
-.header h1 {
-  text-align: center;
-  padding: 1rem;
-}
-
 
 .center {
   position: relative;
@@ -58,12 +45,11 @@ html, body {
 .center::before {
   content: "";
   position: absolute;
-  inset: 0; 
-  background: url('./images/main.webp') no-repeat center center / cover;
-  opacity: 0.6; 
+  inset: 0;
+  background: url("./images/main.webp") no-repeat center center / cover;
+  opacity: 0.6;
   z-index: -1;
 }
-
 
 .center h1 {
   font-size: 3rem;
@@ -91,46 +77,108 @@ html, body {
   transition: background-color 0.3s ease;
 }
 
-.center button:hover {
-  background-color: #028bcc;
+.center:hover button {
+  background-color: #0052cc;
 }
-
 
 .view1 .bottom {
   width: 100%;
-  background-color: #1f2123;
-  line-height: 2em;
+  /* background-color: #1f2123; */
+  /* line-height: 2em; */
 }
 
 .view1 .bottom h3 {
-  padding: 1em 3.2rem;
+  padding: 1em;
   text-align: center;
   font-weight: 600;
+  font-size: 2em;
 }
 
 .view1 .bottom p {
   padding: 1em 3.2rem;
   text-align: center;
-  font-size: 1rem;
+  font-size: 1.3rem;
   font-weight: 400;
 }
 
-.view2{
+/* ------------------------------view2----------------------------- */
+
+.view2 {
   width: 100%;
+  padding: 0.5em;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  gap: 1em;
 }
 
-.view2 .d1{
+.view2 .d1 {
   width: 100%;
-  padding: 5em 4rem;
+  padding: 5em 2.5rem;
   background-color: #222526;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  gap: 1em;
 }
 
-.d1 h2{
+.d1 h2 {
   font-size: 2rem;
   font-weight: 600;
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
+  opacity: 0.5;
+}
+
+.d1 p {
+  margin-bottom: 1.5rem;
+  opacity: 0.5;
+  font-size: 1.1em;
+  font-weight: 100;
+  line-height: 1.5em;
+}
+
+.d1 button {
+  padding: 1em 2em;
+  font-size: 1em;
+  font-weight: 700;
+  background-color: #0052cc;
+  border: none;
+  border-radius: 7px;
+  color: #e8e6e3;
+}
+
+/* ------------------------------View3------------------------ */
+
+.view3 {
+  width: 100%;
+  position: relative;
+}
+
+.view3 video {
+  width: 100%;
+  object-fit: cover;
+  aspect-ratio: 4/5;
+  opacity: 0.8;
+}
+
+.view3 .content {
+  text-align: center;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-self: center;
+  flex-direction: column;
+  position: absolute;
+  top: 25%;
+  left: 5%;
+  padding: 1em;
+  gap: 5em;
+}
+
+.view3 .content p{
+  font-size: 1.5em;
+  padding-right: 1em;
 }
