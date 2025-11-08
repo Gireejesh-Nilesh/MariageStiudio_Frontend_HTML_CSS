@@ -155,6 +155,11 @@ body {
 .view3 {
   width: 100%;
   position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1.5em;
 }
 
 .view3 video {
@@ -181,4 +186,24 @@ body {
 .view3 .content p{
   font-size: 1.5em;
   padding-right: 1em;
+}
+
+.view3 .tags{
+  width: 100%;
+  padding: 1em 2em;
+  font-size: 1rem;
+  text-align: center;
+  line-height: 1.5em;
+  background-color: #000;
+  
+}
+
+.view3 .tags a{
+  text-decoration: none;
+  padding-left: 0.5em;
+  
+}
+
+.view3 .tags a:nth-child(1){
+  color: #e8e6e3;
 }
